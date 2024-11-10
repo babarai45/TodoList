@@ -1,0 +1,16 @@
+
+<!-- apps/homeApp/templates/home.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home Data</title>
+</head>
+<body>
+    <h1>Home Data</h1>
+    <ul>
+        {% for home in data.homes %}
+            <li>{{ home.address }} - {{ home.owner }} - ${{ home.price }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html> {% endcomment %}
